@@ -28,44 +28,20 @@ $ pipenv install
     * `$ pipenv run python blockchain.py -p 5001`
     * `$ pipenv run python blockchain.py --port 5002`
     
-## Docker
+## 功能
+### 觀看區塊鏈狀態
+http://127.0.0.1:端口/chain
 
-Another option for running this blockchain program is to use Docker.  Follow the instructions below to create a local Docker container:
+在5000端口開啟節點 http://127.0.0.1:5000/chain 上可以看到鏈上的區塊
+### 產生新區塊
+http://127.0.0.1:端口/mine
 
-1. Clone this repository
-2. Build the docker container
-
-```
-$ docker build -t blockchain .
-```
-
-3. Run the container
-
-```
-$ docker run --rm -p 80:5000 blockchain
-```
-
-4. To add more instances, vary the public port number before the colon:
-
-```
-$ docker run --rm -p 81:5000 blockchain
-$ docker run --rm -p 82:5000 blockchain
-$ docker run --rm -p 83:5000 blockchain
-```
-
-## Installation (C# Implementation)
-
-1. Install a free copy of Visual Studio IDE (Community Edition):
-https://www.visualstudio.com/vs/
-
-2. Once installed, open the solution file (BlockChain.sln) using the File > Open > Project/Solution menu options within Visual Studio.
-
-3. From within the "Solution Explorer", right click the BlockChain.Console project and select the "Set As Startup Project" option.
-
-4. Click the "Start" button, or hit F5 to run. The program executes in a console window, and is controlled via HTTP with the same commands as the Python version.
+在5000端口開啟節點並產生新的區塊 http://127.0.0.1:5000/mine
+### 產生新交易
 
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+
+
+
 
