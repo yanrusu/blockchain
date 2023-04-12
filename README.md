@@ -38,6 +38,25 @@ http://127.0.0.1:5000/mine
 
 5000端口節點並產生新的區塊 http://127.0.0.1:5000/mine
 ### 產生新交易
+```
+curl http://127.0.0.1:5000/transactions/new -X POST -H "Content-Type: application/json" -d 
+
+'{
+    "sender": "d4ee26eee15148ee92c6cd394edd974e",
+    "recipient": "someone-other-address",
+    "amount": 5
+}'
+```
+### 註冊新節點
+先開起薪節點，再進行註冊
+```
+curl http://127.0.0.1:5000/nodes/register -X POST -H "Content-Type: application/json" -d '{"nodes": ["http://127.0.0.1:5001"]}'
+```
+### 同步節點
+
+
+
+
 
 
 
