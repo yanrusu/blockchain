@@ -54,6 +54,7 @@ curl http://127.0.0.1:5000/nodes/register -X POST -H "Content-Type: application/
 ```
 ### 同步節點
 同兩節點的狀態
+
 http://127.0.0.1:5000/nodes/resolve
 
 
