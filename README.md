@@ -48,12 +48,13 @@ curl http://127.0.0.1:5000/transactions/new -X POST -H "Content-Type: applicatio
 }'
 ```
 ### 註冊新節點
-先開起薪節點，再進行註冊
+先開起新節點，再進行註冊
 ```
 curl http://127.0.0.1:5000/nodes/register -X POST -H "Content-Type: application/json" -d '{"nodes": ["http://127.0.0.1:5001"]}'
 ```
 ### 同步節點
-
+同兩節點的狀態
+http://127.0.0.1:5000/nodes/resolve
 
 
 
