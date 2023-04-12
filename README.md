@@ -18,10 +18,12 @@ $ pipenv install
     * `$ pipenv run python blockchain.py --port 5002`
     
 ## 功能
+
 ### 觀看區塊鏈狀態
 http://127.0.0.1:5000/chain
 
 5000端口節點上可以看到鏈上的區塊
+
 ### 產生新區塊
 http://127.0.0.1:5000/mine
 
@@ -37,11 +39,13 @@ curl http://127.0.0.1:5000/transactions/new -X POST -H "Content-Type: applicatio
     "amount": 5
 }'
 ```
+
 ### 註冊新節點
 先開起新節點，再進行註冊
 ```
 curl http://127.0.0.1:5000/nodes/register -X POST -H "Content-Type: application/json" -d '{"nodes": ["http://127.0.0.1:5001"]}'
 ```
+
 ### 同步節點
 同兩節點的狀態
 
